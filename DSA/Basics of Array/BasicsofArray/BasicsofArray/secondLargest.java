@@ -22,9 +22,10 @@ public class secondLargest {
         int smx;
         smx=arr[0];
         for (int i = 0; i < arr.length; i++) {
-            if(arr[i]!=mx)
+            if(arr[i]!=mx && arr[i]>smx)
             {
-                smx=Math.max(smx, arr[i]);
+                smx=arr[i];
+                //smx=Math.max(smx, arr[i]);
             }
         }
         System.out.println("Second Largest Element is:"+smx);
