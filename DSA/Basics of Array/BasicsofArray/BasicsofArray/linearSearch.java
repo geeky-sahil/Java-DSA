@@ -12,11 +12,23 @@ public class linearSearch {
         }
         System.out.println("Enter the number to be searched:");
         Double s=sc.nextDouble();
+
+        boolean flag=false;//element not found
         for (int i = 0; i < arr.length; i++) {
             if(arr[i]==s){
-                System.out.println("Element found:"+arr[i]+" At Position:"+ i);
+                //System.out.println("Element found:"+arr[i]+" At Position:"+ i);
+                flag=true;//element found
+                break;
+            }
+            }
+            if(flag==true){
+                System.out.println("Element found");
+            }
+            else
+            {
+                System.out.println("Element not found");
             }
         }
     }
     
-}
+
