@@ -1,5 +1,5 @@
 import java.util.*;
-public class copyOfArray {
+public class shallowCopyOfArray {
     public static void main(String[] args) {
        int arr[]={30,10,40,23,89,34};
        for(int ele:arr){
@@ -8,12 +8,12 @@ public class copyOfArray {
        System.out.println();
         int x=4;
         int y=x;
-        int []nums=arr;//Shallow Copy
+        int []nums=arr;//Shallow Copy      //pass by reference
         nums[0]=90;
         for (int i = 0; i < nums.length; i++) {
             System.out.print(nums[i] +" ");
         } 
-        System.out.println(arr[0]);
+        System.out.println(arr[0]);//shallow copy make changes to main array also
         
     }
     
