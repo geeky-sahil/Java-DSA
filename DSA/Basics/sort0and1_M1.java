@@ -1,9 +1,7 @@
 import java.util.*;
 import java.util.Scanner;
 import java.util.Arrays;
-
-
-public class sort0and1 {
+public class sort0and1_M1 {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         System.out.println("Enter the number of elements:");
