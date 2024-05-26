@@ -2,7 +2,7 @@ package DSA.MultiDimensionalArrays;
 
 import java.util.Scanner;
 
-public class largestElement {
+public class sumOfArray {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         System.out.println("Enter the number of rows:");
@@ -12,21 +12,16 @@ public class largestElement {
         System.out.println("Enter the elements one by one:");
         int [][]arr=new int[rows][cols];
         for (int i = 0; i < rows; i++) {
-            for (int j = 0; j < cols; j++) {
+            for (int j = 0; j <cols; j++) {
                 arr[i][j]=sc.nextInt();
-                
-            }
-            
-        }int num=Integer.MIN_VALUE;
+            }  
+        }
+        int sum=0;
         for (int i = 0; i < rows; i++) {
-            for (int j = 0; j < cols; j++) {
-                if(num<arr[i][j]){
-                    num=arr[i][j];
-                }
-                
-            }
-            System.out.println("Greatest Element:"+num);
-            
+            for (int j = 0; j <cols; j++) {
+                sum=sum+arr[i][j];
+            }  
+            System.out.println("Sum:"+sum);
         }
 
     }
